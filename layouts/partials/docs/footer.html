@@ -1,4 +1,4 @@
-<div class="flex justify-between">
+<div class="flex flex-wrap justify-between">
 {{ if .Site.IsMultiLingual }}
   {{ partial "docs/languages" . }}
 {{ end }}
@@ -21,4 +21,6 @@
     </a>
   </div>
 {{ end }}
+
+{{ partial "docs/prev-next" . }}
 </div>
